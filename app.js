@@ -11,6 +11,9 @@ const cors = require('cors');
 const authRoutes = require('./routes/authRoutes');
 const ourTeamRoutes = require('./routes/ourTeamRoutes');
 const ourCompanyRoutes = require('./routes/ourCompanyRoutes')
+const careerRoutes = require('./routes/careerRoutes')
+const contactUsRoutes = require('./routes/contactUsRoutes')
+const jobRequestUsRoutes = require('./routes/jobRequestsRoutes')
 
 
  
@@ -45,6 +48,11 @@ app.use(express.static(publicDir));
 app.use('/auth', authRoutes);
 app.use('/ourTeam', ourTeamRoutes);
 app.use('/ourCompany', ourCompanyRoutes);
+app.use('/careers', careerRoutes);
+app.use('/contactUs', contactUsRoutes);
+app.use('/jobRequest', jobRequestUsRoutes);
+
+
 
 
 
