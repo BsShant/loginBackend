@@ -10,9 +10,10 @@ const cors = require('cors');
 //importing routes 
 const authRoutes = require('./routes/authRoutes');
 const ourTeamRoutes = require('./routes/ourTeamRoutes');
+const ourCompanyRoutes = require('./routes/ourCompanyRoutes')
 
 
-
+ 
 
 
 
@@ -43,6 +44,8 @@ app.use(express.static(publicDir));
 //setting up routes
 app.use('/auth', authRoutes);
 app.use('/ourTeam', ourTeamRoutes);
+app.use('/ourCompany', ourCompanyRoutes);
+
 
 
 
